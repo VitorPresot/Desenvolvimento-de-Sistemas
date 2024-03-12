@@ -15,11 +15,15 @@
                 this.armazenamento = armazenamento; 
             }
             informacoesCelular(){
-                return("A marca do celular é:" + this.marca, "O modelo do celular é" + this.modelo, "O tamannho do armazenamento em GB é" + this.armazenamento);
+                console.log("A marca do celular é: " + this.marca);
+                console.log("O modelo do celular é: " + this.modelo);
+                console.log( "O tamannho do armazenamento em GB é: " + this.armazenamento);
             }
         }
 
         let celular1 = new Celular("Samsung", "Galaxy", 20); 
+
+        console.log(celular1);
         console.log(celular1.informacoesCelular()); 
     </script>
 </body>

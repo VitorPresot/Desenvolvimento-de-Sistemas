@@ -19,15 +19,20 @@
                 return(this.receitaAnual - this.despesasAnuais);
             }
             exibirRelatorio(){
-                return(this.nome ,this.receitaAnual, this.despesasAnuais, empresa1.calcularLucroAnual());
+                console.log("nome " + this.nome);
+                console.log("receita " + this.receitaAnual);
+                console.log("despesa " + this.despesasAnuais);
             }
         }
 
         let empresa1 = new Empresa("McDonalds", 1000, 700); 
         let empresa2 = new Empresa("Burguer King", 1100, 900); 
 
-        console.log("O lucro é " + empresa1.calcularLucroAnual() + " Relatorio do ano: " + empresa1.exibirRelatorio());
-        console.log("O lucro é " + empresa2.calcularLucroAnual() + " Relatorio do ano: " + empresa2.exibirRelatorio());
+        console.log(empresa1)
+        console.log("O lucro é " + empresa1.calcularLucroAnual());
+
+        console.log(empresa2);
+        console.log("O lucro é " + empresa2.calcularLucroAnual());
     </script>
 </body>
 </html>

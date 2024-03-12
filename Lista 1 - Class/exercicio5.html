@@ -15,11 +15,15 @@
                 this.duracao = duracao;
             }
             informacoesFilme(){
-                return("Titulo:" + this.titulo, "Genero:" + this.genero, "Tempo de duração em horas" + this.duracao);
+                console.log("Titulo: " + this.titulo);
+                console.log("Genero: " + this.genero);
+                console.log("Tempo de duração em horas: " + this.duracao);
             }
         }
 
         let filme1 = new Filme("Oppenheimer", "Historia, Suspense", 3); 
+
+        console.log(filme1);
         console.log(filme1.informacoesFilme()); 
     </script>
 </body>
