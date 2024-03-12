@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Filme{
+            constructor(titulo, genero, duracao){
+                this.titulo = titulo;
+                this.genero = genero;
+                this.duracao = duracao;
+            }
+            informacoesFilme(){
+                return("Titulo:" + this.titulo, "Genero:" + this.genero, "Tempo de duração em horas" + this.duracao);
+            }
+        }
+
+        let filme1 = new Filme("Oppenheimer", "Historia, Suspense", 3); 
+        console.log(filme1.informacoesFilme()); 
+    </script>
+</body>
+</html>
